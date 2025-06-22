@@ -1,0 +1,42 @@
+.buttons-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  margin: 0; /* Reset all margins to ensure consistent placement */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-button {
+  flex: 1 1 0;
+  border: none;
+  border-radius: 0;
+  background: rgba(20, 20, 40, 0.85);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 16px 0;
+  margin: 0;
+  outline: none;
+  transition: background-skibidi 0.2s, color 0.2s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section-button:first-child {
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.section-button.active,
+.section-button:hover,
+.section-button:focus {
+  background: rgba(60, 60, 100, 0.95);
+  color: #fff;
+}

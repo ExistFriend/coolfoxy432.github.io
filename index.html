@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+  <html>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="description" content="A portfolio showcasing my Roblox experiences.">
+    <head>
+      <link rel="stylesheet" href="clock.css">
+      <link rel="stylesheet" href="layout.css">
+      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap">
+      <link rel="stylesheet" href="section-content.css">
+      <link rel="stylesheet" href="volume-bar.css">
+      <link rel="stylesheet" href="intro-container.css">
+      <link rel="stylesheet" href="social-media-links.css">
+      <link rel="stylesheet" href="top-banner.css">
+      <link rel="stylesheet" href="buttons-list.css">
+    </head>
+
+
+    <body>
+
+            <!-- Add this just after <body> -->
+      <div id="blur-overlay">
+        <div class="blur-message">Click anywhere to open</div>
+      </div>
+
+    <div class="video-background">
+      <video autoplay loop muted playsinline>
+      <source src="12713608_1920_1080_30fps.mp4" type="video/mp4">
+      </video>
+    </div>
+      <div class="top-banner">
+        <!-- Add your text here -->
+        <p>Currently playing: None</p>
+      </div>
+
+      <div class="clock-skibidi-toilet" id="clock">
+        <h1 id="date-time"></h1>
+        
+      </div>
+
+<!-- Remember to change on fixing the missing .mp4 
+      <video class="Portfolio-Background" autoplay loop muted>
+-->
+
+<div class="audio-tracker">
+        <span id="current-time">00:00</span>
+        <button id="play-button">Play</button>
+        <button id="volume-button">
+        <img src="skibidi-volume-icon.png" alt="Volume Icon" class="volume-icon">
+        </button>
+        <input type="range" id="volume-slider" min="0" max="100" value="20">
+</div>
+
+
+<div class="intro-container">
+  <div class="buttons-list">
+    <button class="section-button" id="profile-btn">Profile Section</button>
+    <button class="section-button" id="roblox-btn">Personal Achievements</button>
+  </div>
+  <div class="section-content" id="profile-section">
+    <div class="profile-section">
+      <img src="screamasspng.png" alt="Profile Picture" class="profile-picture">
+      <p class="profile-name">coolfoxy432</p>
+    </div>
+    <p class="intro-text">Greetings, and welcome to my portfolio</p>
+    <p class="intro-text">
+      I am a professional retard who spends his freetime playing all kinds of games from different kinds of genres, with a ton of my friends.
+      I am mainly here to enjoy the most out of life, before I run out of time to do so anymore.<br><br>
+      Feel free to contact me if you need anything, and I hope to whoever sees this, that you have a great day/night/morning/afternoon/evening.
+      <br><br>
+      "my taxes goes up while my iq goes down"<br><br>
+    </p>
+    <div class="social-media-links">
+      <a href="https://www.roblox.com/users/103035441/profile" target="_blank">
+      <img src="download__1_-removebg-preview.png" alt="Roblox" class="roblox-logo">
+      </a>
+      <a href="https://x.com/coolfoxy432" target="_blank">
+      <img src="images-removebg-preview.png" alt="Twitter" class="twitter-logo">
+      </a>
+      <a href="https://www.youtube.com/@coolfoxy432" target="_blank">
+      <img src="youtube-skibidi-preview.png" alt="YouTube" class="youtube-logo">
+      </a>
+      <a href="http://discordapp.com/users/800676099629252609" target="_blank">
+      <img src="download-removebg-preview (1).png" alt="Discord" class="discord-logo">
+      </a>
+    </div>
+  </div>
+
+  
+
+  <div class="section-content" id="roblox-section" style="display:none;">
+  <div class="roblox-experiences">
+    <h class="Header-Experience">Game Achievements</h>
+    <div class="image-columns">
+      <div class="scroll-container">
+        <div class="game-entry">
+          <img src="R2D.png" alt="Ready 2 Die" class="roblox-game-image">
+          <p>Getting all possible Event items in R2D so far. (2023-2025)</p>
+        </div>
+        <!-- Repeat .game-entry for each entry -->
+        <div class="game-entry">
+          <img src="GB.png" alt="Guts and Blackpowder" class="roblox-game-image">
+          <p>Unlocking "Old Guard" Achievement inside Guts & Blackpowder. (2023)
+</p>
+        </div>
+        <div class="game-entry">
+          <img src="HOR.png" alt="Heroes of Robloxia" class="roblox-game-image">
+          <p>Unlocking an Exclusive item in my first ever Roblox event. (2017)</p>
+        </div>
+        <div class="game-entry">
+          <img src="fob.png" alt="Field of Battle" class="roblox-game-image">
+          <p>Obtaining the Hardest items to obtain in the game (2020)</p>
+        </div>
+        <div class="game-entry">
+          <img src="CHAINSAW.png" alt="Chainsaw" class="roblox-game-image">
+          <p>Beating the survival gamemode inside of CHAIN and Obtaining the Achievement “COMPLETIONIST.” (2024)</p>
+        </div>
+        <div class="game-entry">
+          <img src="tf2.png" alt="Titanfall 2" class="roblox-game-image">
+          <p>Achieving 100% in Titanfall II (2025)</p>
+        </div>
+        <div class="game-entry">
+          <img src="RE-7.png" alt="Resident Evil 4" class="roblox-game-image">
+          <p>Beating Resident Evil 7 on "Madhouse" Difficulty. (2025)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<audio id="audio-player" src="videoplayback (2).mp3" type="audio/mpeg" preload="metadata" loop></audio>
+<script src="clock-script.js" type="text/javascript"></script>
+<script src="slider.js" type="text/javascript"></script>
+<script src="functionality-buttons.js" type="text/javascript"></script>
+<script src="blurryskibidihawk.js" type="text/javascript"></script>
+</html>

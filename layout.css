@@ -1,0 +1,18 @@
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100009999999; /* Just behind everything else */
+  overflow: hidden;
+  pointer-events: none; /* Prevent interaction */
+}
+
+.video-background video {
+  width: 100vw;
+  height: 100vh;
+  z-index: -100009999999; /* Just behind everything else */
+  object-fit: cover;
+  pointer-events: none;
+}

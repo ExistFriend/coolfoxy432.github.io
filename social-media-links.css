@@ -1,0 +1,54 @@
+.social-media-links {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Align logos vertically */
+  gap: 20px; /* Add consistent spacing between logos */
+  flex-wrap: wrap; /* Allow wrapping if there are too many links */
+  margin-top: 50px; /* Add spacing above the links */
+  margin-bottom: 50px;
+}
+
+.social-media-links a {
+  text-decoration: none; /* Remove the underline from the links */
+  display: inline-flex; /* Ensure the anchor wraps tightly around the logo */
+  align-items: center; /* Center the logo inside the anchor */
+  margin: 0; /* Remove any extra margin */
+  padding: 0; /* Remove any extra padding */
+}
+
+.twitter-logo,
+.roblox-logo,
+.discord-logo,
+.youtube-logo {
+  width: 50px; /* Set a consistent width for all logos */
+  height: 50px; /* Set a consistent height for all logos */
+  object-fit: contain; /* Ensure the logos scale proportionally */
+  display: block; /* Ensure the logos do not have inline spacing */
+  animation: inner-glow 2s infinite alternate; /* Add the inner glow animation */
+}
+
+.twitter-logo {
+  object-fit: cover; /* Zooms in and crops the image */
+  object-position: center; /* Adjust as needed (e.g., 'top', 'bottom', 'center') */
+  /* Optionally, you can increase the scale for more zoom: */
+  transform: scale(1);  /* Zoom in by 30% */
+  /* If you want the zoom only on hover, move transform: scale(1.3); to the hover selector */
+}
+
+.roblox-logo:hover,
+.twitter-logo:hover,
+.discord-logo:hover,
+.youtube-logo:hover,
+.docs-logo:hover {
+  transform: scale(1.2); /* Slightly enlarge the logo on hover */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+@keyframes inner-glow {
+  0% {
+    filter: brightness(1); /* Normal brightness */
+  }
+  100% {
+    filter: brightness(2); /* Increased brightness for inner glow */
+  }
+}

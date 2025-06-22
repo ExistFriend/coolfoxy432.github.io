@@ -1,0 +1,32 @@
+html, body {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Ensure the body and html take up the full width */
+  height: 100%; /* Ensure the body and html take up the full height */
+}
+
+/* Blurry overlay styles */
+#blur-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(20, 20, 30, 0.7);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+
+.blur-message {
+  color: #fff;
+  font-size: 2.2rem;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(0,0,0,0.4);
+  padding: 32px 48px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  text-align: center;
+  user-select: none;
+  letter-spacing: 1px;
+}

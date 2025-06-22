@@ -1,0 +1,117 @@
+.audio-tracker {
+  position: fixed;
+  bottom: 40px; /* Leaves 40px space from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 12px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 99999999;
+}
+
+
+.audio-tracker.expanded {
+  width: 180px; /* Expanded width to fit the play button and volume button */
+}
+
+.audio-tracker.expanded-slider {
+  width: 305px; /* Expanded width to fit the slider */
+}
+
+#play-button {
+  width: 60px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#play-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.volume-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%; /* Make the icon round */
+}
+
+#volume-button {
+  width: 60px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: rgba(255, 247, 247, 0.521);
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent interaction when hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#volume-button.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Allow interaction */
+}
+
+#volume-button:hover {
+  background-color: rgb(255, 255, 255); /* Lighten the background on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+#current-time{
+  display: inline-block; /* Ensure the spans behave like blocks for fixed width */
+  width: 50px; /* Set a fixed width to accommodate the largest possible time (e.g., "99:59") */
+  text-align: center; /* Center-align the text inside the span */
+  font-family: 'Montserrat', sans-serif; /* Match the font style */
+  font-size: 16px; /* Ensure consistent font size */
+}
+
+#volume-button.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Allow interaction */
+}
+
+#volume-slider {
+  width: 120px;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent interaction when hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#volume-slider.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Allow interaction */
+}
+
+/* Animation for the volume button appearing from left to right */
+@keyframes slide-in {
+  from {
+    opacity: 0; /* Start invisible */
+    transform: translateX(-50px); /* Start off-screen to the left */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* End at its original position */
+  }
+}

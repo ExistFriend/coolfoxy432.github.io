@@ -1,0 +1,40 @@
+.clock-skibidi-toilet {
+  font-family: Montserrat;
+  font-weight: light;
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  position: absolute;
+  top: 15%; /* Move to the vertical center */
+  left: 50%; /* Move to the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust for the element's size */
+  padding-bottom: 50px;
+}
+
+@keyframes clock-text-color {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.clock-skibidi-toilet h1 {
+  font-size: 30px; /* Adjust font size for better readability */
+  line-height: 1.6; /* Add spacing between lines for better readability */
+  margin-bottom: 20px; /* Add space between paragraphs */
+  text-align: center; /* Center-align the text */
+  color: transparent; /* Make the text transparent */
+  background: linear-gradient(90deg, white, rgb(2, 6, 65), white); /* Gradient from white to blue */
+  background-size: 200% 300%; /* Double the size for smooth animation */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  background-clip: text; /* Clip the gradient to the text */
+  animation: clock-text-color 3s linear infinite; /* Apply the animation */
+  max-width: 450px; /* Limit the width of the text for better layout */
+  transition: color 0.3s ease, opacity 0.3s ease; /* Add smooth transition for hover effects */
+}

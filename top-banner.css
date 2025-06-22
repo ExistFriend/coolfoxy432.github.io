@@ -1,0 +1,33 @@
+.top-banner {
+  position: fixed; /* Fix the div at the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make it span the full width of the page */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add some padding for better spacing */
+  font-family: 'Montserrat', sans-serif; /* Use the same font as the rest of the page */
+  z-index: 9999; /* Ensure it stays on top of everything */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  color: transparent; /* Make the text transparent */
+  background: linear-gradient(90deg, white, rgb(4, 30, 177), white); /* Gradient from white to blue */
+  background-size: 200% 400%; /* Double the size for smooth animation */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  background-clip: text; /* Clip the gradient to the text */
+  animation: intro-text-color 3s linear infinite; /* Apply the animation */
+  transition: color 0.5s ease, opacity 0.3s ease; /* Add smooth transition for hover effects */
+}
+
+.top-banner p {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+@keyframes banner-color-slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}

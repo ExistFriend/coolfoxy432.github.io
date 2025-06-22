@@ -1,0 +1,99 @@
+.section-content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  overflow-y: scroll;
+  margin: 50px auto 0 auto; /* <-- Added top margin to clear the buttons */
+  border: 2px solid white;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn’t break layout */
+  position: relative;
+}
+
+.scroll-container {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 10px;
+  font-weight: lighter;
+  color: white;
+}
+
+
+.roblox-game-image {
+  width: 450px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 35px;
+  animation: game-thumbnail-glow 2s infinite alternate; /* Add the glowing animation */
+}
+
+@keyframes game-thumbnail-glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 
+                0 0 0px rgba(255, 255, 255, 0.3), 
+                0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(231, 178, 3, 0.2), 
+                0 0 20px rgba(231, 178, 3, 0.2), 
+                0 0 30px rgba(231, 178, 3, 0.2);
+  }
+}
+
+.game-entry {
+  margin-bottom: 20px;
+  animation: achievement-text-color 3s linear infinite; /* Apply the animation */
+  transition: color 0.5s ease, opacity 0.3s ease; /* Add smooth transition for hover effects */
+}
+
+.game-entry p {
+  animation: achievement-text-color 3s linear infinite; /* Apply the animation */
+  transition: color 0.5s ease, opacity 0.3s ease; /* Add smooth transition for hover effects */
+}
+
+@keyframes achievement-text-color {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.Header-Experience {
+  padding-top: 1000px;
+  font-size: 34px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  animation: golden-glow 2s infinite alternate; /* Add the glowing animation */
+  color: rgb(228, 151, 9);
+}
+
+@keyframes golden-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 
+                 0 0 0px rgba(255, 255, 255, 0.3), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 208, 0, 0.3), 
+                 0 0 20px rgba(255, 208, 0, 0.3), 
+                 0 0 30px rgba(255, 208, 0, 0.3);
+  }
+}
+
+@keyframes text-achievement-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 
+                 0 0 0px rgba(255, 255, 255, 0.3), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(3, 25, 97, 0.8), 
+                 0 0 20px rgba(3, 25, 97, 0.8), 
+                 0 0 30px rgba(3, 25, 97, 0.8);
+  }
+}
